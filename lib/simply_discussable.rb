@@ -1,8 +1,8 @@
 require 'active_record'
 require 'active_support'
 require 'ruby_extension'
-require 'rails_helpers'
-require 'authorized'
+require 'simply_helpful'
+require 'simply_authorized'
 require 'calnet_authenticated'
 require 'acts_as_list'
 module SimplyDiscussable
@@ -22,7 +22,6 @@ HTML::WhiteListSanitizer.allowed_attributes.merge(%w(
 ))
 
 if !defined?(RAILS_ENV) || RAILS_ENV == 'test'
-	require 'active_support'
 	require 'active_support/test_case'
 	require 'factory_girl'
 	require 'assert_this_and_that'
