@@ -31,7 +31,7 @@ Rails::Initializer.run do |config|
 		File.expand_path(File.join(File.dirname(__FILE__),'../..')),
 		File.expand_path(File.join(File.dirname(__FILE__),'../../..','peter'))
 	]
-	config.plugins = [:documents,
+	config.plugins = [:simply_discussable,
 		:html_test, :html_test_extension]
 
 	config.frameworks -= [:active_resource]
@@ -65,5 +65,5 @@ Rails::Initializer.run do |config|
 	
 end
 require 'user'
-user=User.find_create_and_update_by_uid('859908')
-user.deputize
+#user=User.find_create_and_update_by_uid('859908')
+#user.deputize
