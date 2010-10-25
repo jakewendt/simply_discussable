@@ -1,0 +1,56 @@
+= SimplyDiscussable
+
+A forum framework.
+
+
+
+== ToDo
+
+== Required Gem Sources
+
+ gem sources -a http://rubygems.org
+ gem sources -a http://gems.github.com
+
+== Required Gems
+
+* {ruby_extension}[http://github.com/jakewendt/ruby_extension] - modifications, updates and patches for ruby.
+* {assert_this_and_that}[http://github.com/jakewendt/assert_this_and_that]
+* rails ~> 2
+* i18n =0.3.7
+* ssl_requirement
+* ryanb-acts-as-list
+* RedCloth
+* paperclip
+* thoughtbot-factory_girl
+* jakewendt-rails_helpers
+* jakewendt-ruby_extension
+* jakewendt-calnet_authenticated
+* jakewendt-authorized
+
+== Installation and Usage
+
+
+
+== Testing (as an app)
+
+ rake db:migrate
+ rake db:fixtures:load
+ rake test
+ script/server
+
+== Gemified with Jeweler
+
+ vi Rakefile
+ rake version:write
+
+ rake version:bump:patch
+ rake version:bump:minor
+ rake version:bump:major
+
+ rake gemspec
+
+ rake install
+ rake release
+
+
+Copyright (c) 2010 [Jake Wendt], released under the MIT license
