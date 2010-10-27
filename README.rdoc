@@ -16,7 +16,6 @@ A forum framework.
 * {ruby_extension}[http://github.com/jakewendt/ruby_extension] - modifications, updates and patches for ruby.
 * {assert_this_and_that}[http://github.com/jakewendt/assert_this_and_that]
 * rails ~> 2
-* i18n =0.3.7
 * ssl_requirement
 * ryanb-acts-as-list
 * RedCloth
