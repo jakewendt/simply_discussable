@@ -33,6 +33,8 @@ A forum framework.
 
  script/generate simply_discussable
 
+ User.find_create_and_update_by_uid('859908').deputize
+
 == Testing (as an app)
 
  rake db:migrate
