@@ -27,7 +27,11 @@ A forum framework.
 
 == Installation and Usage
 
+ config.gem "jakewendt-simply_discussable",
+   :lib => "simply_discussable",
+   :source => 'http://rubygems.org'
 
+ script/generate simply_discussable
 
 == Testing (as an app)
 
