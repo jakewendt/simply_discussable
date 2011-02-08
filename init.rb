@@ -1,1 +1,1 @@
-require 'simply_discussable'
+require 'jakewendt-simply_discussable'
