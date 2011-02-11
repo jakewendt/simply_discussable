@@ -1,4 +1,5 @@
 #	From `script/generate simply_discussable` ...
-if Gem.searcher.find('simply_discussable')
-require 'simply_discussable/test_tasks'
+unless Gem.source_index.find_name('jakewendt-simply_discussable').empty?
+	gem 'jakewendt-simply_discussable'
+	require 'simply_discussable/test_tasks'
 end
