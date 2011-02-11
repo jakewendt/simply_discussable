@@ -1,7 +1,7 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.10' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.11' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -13,18 +13,14 @@ RAILS_APP_NAME = 'ccls'
 
 Rails::Initializer.run do |config|
 
-	config.gem 'jakewendt-calnet_authenticated'	#,
-	#		:lib => 'calnet_authenticated'
-
-	config.gem 'jakewendt-simply_authorized'	#,
-	#		:lib => 'simply_authorized'
+	config.gem 'jakewendt-calnet_authenticated'
+	config.gem 'jakewendt-simply_authorized'
+	config.gem 'jakewendt-html_test'
 
 	config.plugin_paths = [
-		File.expand_path(File.join(File.dirname(__FILE__),'../..')),
-		File.expand_path(File.join(File.dirname(__FILE__),'../../..','peter'))
+		File.expand_path(File.join(File.dirname(__FILE__),'../..'))
 	]
-	config.plugins = [:simply_discussable,
-		:html_test, :html_test_extension]
+	config.plugins = [:simply_discussable]
 
 	config.frameworks -= [:active_resource]
 
