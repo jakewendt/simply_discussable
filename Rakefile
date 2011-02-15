@@ -70,7 +70,7 @@ begin
 		gem.add_dependency('ssl_requirement')
 		gem.add_dependency('ryanb-acts-as-list')
 		gem.add_dependency('thoughtbot-factory_girl')
-		gem.add_dependency('jakewendt-calnet_authenticated')
+		gem.add_dependency('ccls-calnet_authenticated')
 	end
 	Jeweler::GemcutterTasks.new
 rescue LoadError
