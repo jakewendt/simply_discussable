@@ -3,7 +3,7 @@ require 'active_support'
 require 'ruby_extension'
 require 'simply_helpful'
 require 'simply_authorized'
-require 'calnet_authenticated'
+#require 'calnet_authenticated'
 require 'acts_as_list'
 module SimplyDiscussable
 #	predefine namespace
