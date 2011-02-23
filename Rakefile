@@ -66,6 +66,8 @@ begin
 		gem.add_dependency('jakewendt-ruby_extension')
 		gem.add_dependency('jakewendt-rails_extension')
 		gem.add_dependency('jakewendt-simply_authorized')
+#	test only
+#		gem.add_dependency('jakewendt-simply_sessions')
 		gem.add_dependency('chronic')
 		gem.add_dependency('ssl_requirement')
 		gem.add_dependency('ryanb-acts-as-list')
